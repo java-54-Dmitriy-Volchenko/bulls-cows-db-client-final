@@ -11,7 +11,7 @@ public class BullsCowsClientAppl {
 
 	public static void main(String[] args) {
 		InputOutput inputOutput = new SystemInputOutput();
-		TcpClient tcpClient = new TcpClient("localhost", 5000);
+		TcpClient tcpClient = new TcpClient("localhost", 5004);
 		BullsCowsTcpProxy proxy = new BullsCowsTcpProxy(tcpClient);
 		List<Item> items = BullsCowsApplicationItems.getItems(proxy, N_DIGITS);
 		items.add(Item.of("Exit",
